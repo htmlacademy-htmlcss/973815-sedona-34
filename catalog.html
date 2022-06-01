@@ -40,6 +40,49 @@
       </ul>
     </nav>
   </header>
+  <main class="main-catalog">
+    <header class="catalog-header">
+      <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Гостиницы</a>
+        </li>
+      </ul>
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Инфраструктура:</legend>
+          <label class="catalog-infrastructure">
+            <input class="catalog-checkbox" type="checkbox" name="pool" checked>Бассейн
+          </label>
+          <label class="catalog-infrastructure">
+            <input class="catalog-checkbox" type="checkbox" name="parking" checked>Парковка
+          </label>
+          <label class="catalog-infrastructure">
+            <input class="catalog-checkbox" type="checkbox" name="wifi">Wi-Fi
+          </label>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Тип жилья:</legend>
+          <label class="catalog-type">
+            <input class="catalog-radio" type="radio" name="hotel-type" value="hotel">Гостиница
+          </label>
+          <label class="catalog-type">
+            <input class="catalog-radio" type="radio" name="hotel-type" value="motel">Мотель
+          </label>
+          <label class="catalog-type">
+            <input class="catalog-radio" type="radio" name="hotel-type" value="apartments">Апартаменты
+          </label>
+        </fieldset>
+        <button class="catalog-filter-button button" type="submit">Применить</button>
+        <button class="catalog-filter-reset" type="reset">Сбросить</button>
+      </form>
+    </header>
+  </main>
   <footer class="page-footer">
     <section class="footer-subscribe">
       <h2 class="main-title">Подпишитесь на рассылку</h2>
