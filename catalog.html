@@ -82,6 +82,101 @@
         <button class="catalog-filter-reset" type="reset">Сбросить</button>
       </form>
     </header>
+    <section class="results">
+      <h2 class="visually-hidden">Результаты поиска гостиницы по фильтрам</h2>
+      <p class="results main-title">Найдено гостиниц: 38</p>
+      <select class="results-select" aria-label="Сортировка результатов поиска">
+        <option value="popular">Сначала популярные</option>
+        <option value="cheap" selected>Сначала дешевые</option>
+        <option value="expensive">Сначала дорогие</option>
+      </select>
+      <a class="sort-button" href="#">
+        <span class="visually-hidden">Показать таблицей</span>
+      </a>
+      <a class="sort-button" href="#">
+        <span class="visually-hidden">Показать карточки</span>
+      </a>
+      <a class="sort-button" href="#">
+        <span class="visually-hidden">Показать списком</span>
+      </a>
+      <ul class="product-list">
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-img" src="#" width="300" height="211" alt="Amara Resort & Spa">
+            <h3 class="product-card-title">Amara Resort & Spa</h3>
+          </a>
+          <p class="product-card-type">Гостиница</p>
+          <p class="product-card-price">От 4000 ₽</p>
+          <a class="product-card-button button" href="#">Подробнее</a>
+          <a class="product-card-button button" href="#">В избранное</a>
+          <p class="roduct-card-rating">Рейтинг: 8,5</p>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-img" src="#" width="300" height="211" alt="Villas at Poco Diablo">
+            <h3 class="product-card-title">Villas at Poco Diablo</h3>
+          </a>
+          <p class="product-card-type">Гостиница</p>
+          <p class="product-card-price">От 5000 ₽</p>
+          <a class="product-card-button button" href="#">Подробнее</a>
+          <a class="product-card-button button" href="#">В избранное</a>
+          <p class="roduct-card-rating">Рейтинг: 9,2</p>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-img" src="#" width="300" height="211" alt="Desert Quail Inn">
+            <h3 class="product-card-title">Desert Quail Inn</h3>
+          </a>
+          <p class="product-card-type">Гостиница</p>
+          <p class="product-card-price">От 2500 ₽</p>
+          <a class="product-card-button button" href="#">Подробнее</a>
+          <a class="product-card-button button" href="#">В избранное</a>
+          <p class="roduct-card-rating">Рейтинг: 6,9</p>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-img" src="#" width="300" height="211" alt="GreenTree Inn">
+            <h3 class="product-card-title">GreenTree Inn</h3>
+          </a>
+          <p class="product-card-type">Гостиница</p>
+          <p class="product-card-price">От 1500 ₽</p>
+          <a class="product-card-button button" href="#">Подробнее</a>
+          <a class="product-card-button button" href="#">В избранное</a>
+          <p class="roduct-card-rating">Рейтинг: 5,0</p>
+        </li>
+      </ul>
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">...</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">10</a>
+        </li>
+      </ul>
+      <div class="quantity-wrapper">
+        <p class="quantity-text">Гостиниц на странице:</p>
+        <select class="quantity-select" aria-label="Гостиниц на странице">
+          <option value="one">1</option>
+          <option value="two">2</option>
+          <option value="three">3</option>
+          <option value="four" selected>4</option>
+          <option value="five">5</option>
+          <option value="six">6</option>
+        </select>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <section class="footer-subscribe">
