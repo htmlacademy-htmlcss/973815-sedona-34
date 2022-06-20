@@ -79,3 +79,49 @@ img {
   text-align: center;
   color: #333333;
 }
+
+.advantages {
+  background-color: #f0f5f9;
+}
+
+.advantages-item:nth-child(-n+2) {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.advantages-sublist-title {
+  color: #000000;
+}
+
+.advantages-sublist-desc {
+  color: #333333;
+}
+
+.advantages-item:nth-child(n+3):nth-child(even) {
+  background-color: #e6f0f6;
+}
+
+.advantages-sublist {
+  background-color: #ffffff;
+}
+
+.advantages-sublist-item:nth-child(odd) {
+  background-color: #f0f5f9;
+}
+
+.advantages-title,
+.advantages-sublist-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-desc,
+.advantages-sublist-desc,
+.advantages-number {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
