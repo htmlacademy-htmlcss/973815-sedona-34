@@ -53,3 +53,27 @@ img {
   color: #FFFFFF;
   background-color: #756157;
 }
+
+.main-index {
+  background-color: #FFFFFF;
+}
+
+.welcome-wrapper {
+  background: #539cd7 url(../images/backgrounds/background-welcome.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.main-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
