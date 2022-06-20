@@ -29,6 +29,12 @@ img {
   object-fit: contain;
 }
 
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .page-header {
   background-color: #FFFFFF;
 }
