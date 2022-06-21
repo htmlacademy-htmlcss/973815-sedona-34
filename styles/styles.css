@@ -50,6 +50,7 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756157;
+  cursor: pointer;
 }
 
 .welcome-wrapper {
@@ -70,6 +71,10 @@ img {
   line-height: 26px;
   text-align: center;
   color: #333333;
+}
+
+.main-text-bg {
+  color: #ffffff;
 }
 
 .advantages {
@@ -122,4 +127,24 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+}
+
+.footer-subscribe-index {
+  color: #FFFFFF;
+  background: #496d82 url(../images/backgrounds/background-subscribe.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.footer-subscribe-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+}
+
+.footer-phone-number {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: inherit;
 }
