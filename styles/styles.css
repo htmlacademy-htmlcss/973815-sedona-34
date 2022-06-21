@@ -61,7 +61,7 @@ img {
 }
 
 .welcome-wrapper {
-  background: #539cd7 url(../images/backgrounds/background-welcome.jpg) no-repeat;
+  background: #6b869d url(../images/backgrounds/background-welcome.jpg) no-repeat;
   background-size: 100% auto;
 }
 
@@ -124,4 +124,14 @@ img {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+}
+
+.hotel-search {
+  background-color: #FFFFFF;
+}
+
+.hotel-search-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
