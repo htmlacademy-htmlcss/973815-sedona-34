@@ -21,7 +21,13 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
+  background-color: #F2F2F2;
+}
+
+.page-container {
   background-color: #FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 img {
