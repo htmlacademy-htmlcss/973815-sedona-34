@@ -55,6 +55,26 @@ img {
   margin: 0;
 }
 
+.page-header {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+}
+
+.navigation-list {
+  display: flex;
+  width: 520px;
+  margin-left: 30px;
+}
+
+.navigation-tools {
+  width: 264px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
