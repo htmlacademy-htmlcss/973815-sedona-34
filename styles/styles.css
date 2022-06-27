@@ -230,6 +230,27 @@ img {
   line-height: 36px;
 }
 
+.subscribe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-index {
+  color: #FFFFFF;
+  background: #496d82 url(../images/backgrounds/background-subscribe.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.subscribe-button {
+  width: 200px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
 .catalog-header {
   background: #4b5f74 url(../images/backgrounds/background-filter.jpg) no-repeat;
   background-size: 100% auto;
@@ -306,26 +327,6 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-}
-
-.footer-subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-subscribe-index {
-  color: #FFFFFF;
-  background: #496d82 url(../images/backgrounds/background-subscribe.jpg) no-repeat;
-  background-size: 100% auto;
-}
-
-.footer-subscribe-button {
-  width: 200px;
-  height: 60px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
 }
 
 .footer-phone-number {
