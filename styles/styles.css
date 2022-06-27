@@ -329,6 +329,16 @@ img {
   color: #333333;
 }
 
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-around;
+}
+
 .footer-phone-number {
   font-size: 40px;
   line-height: 40px;
