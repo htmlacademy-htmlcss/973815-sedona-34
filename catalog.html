@@ -86,21 +86,23 @@
       </header>
       <section class="results">
         <h2 class="visually-hidden">Результаты поиска гостиницы по фильтрам</h2>
-        <p class="results main-title">Найдено гостиниц: 38</p>
-        <select class="results-select" aria-label="Сортировка результатов поиска">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap" selected>Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <a class="sort-button sort-button-selected" href="#">
-          <span class="visually-hidden">Показать таблицей</span>
-        </a>
-        <a class="sort-button" href="#">
-          <span class="visually-hidden">Показать слайдшоу</span>
-        </a>
-        <a class="sort-button" href="#">
-          <span class="visually-hidden">Показать списком</span>
-        </a>
+        <div class="results-wrapper">
+          <p class="results-title main-title">Найдено гостиниц: 38</p>
+          <select class="results-select" aria-label="Сортировка результатов поиска">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap" selected>Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <a class="sort-button sort-button-selected" href="#">
+            <span class="visually-hidden">Показать таблицей</span>
+          </a>
+          <a class="sort-button" href="#">
+            <span class="visually-hidden">Показать слайдшоу</span>
+          </a>
+          <a class="sort-button" href="#">
+            <span class="visually-hidden">Показать списком</span>
+          </a>
+        </div>
         <ul class="product-list list-reset">
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -151,36 +153,38 @@
             <p class="product-card-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
-        <ul class="pagination list-reset">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current button">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link button button-add" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link button button-add" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link button button-add" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link button button-add" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link button button-add" href="#">10</a>
-          </li>
-        </ul>
-        <div class="quantity-wrapper">
-          <p class="quantity-text">Гостиниц на странице:</p>
-          <select class="quantity-select" aria-label="Гостиниц на странице">
-            <option value="one">1</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-            <option value="four" selected>4</option>
-            <option value="five">5</option>
-            <option value="six">6</option>
-          </select>
+        <div class="pagination-wrapper">
+          <ul class="pagination list-reset">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current button">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link button button-add" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link button button-add" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link button button-add" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link button button-add" href="#">...</a>
+            </li>
+            <li class="pagination-item button button-add">
+              <a class="pagination-link button button-add" href="#">10</a>
+            </li>
+          </ul>
+          <div class="quantity">
+            <p class="quantity-text">Гостиниц на странице:</p>
+            <select class="quantity-select" aria-label="Гостиниц на странице">
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four" selected>4</option>
+              <option value="five">5</option>
+              <option value="six">6</option>
+            </select>
+          </div>
         </div>
       </section>
       <section class="subscribe">
