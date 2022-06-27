@@ -252,6 +252,8 @@ img {
 }
 
 .catalog-header {
+  width: 100%;
+  min-height: 403px;
   background: #4b5f74 url(../images/backgrounds/background-filter.jpg) no-repeat;
   background-size: 100% auto;
   color: #FFFFFF;
@@ -276,6 +278,15 @@ img {
   line-height: 26px;
 }
 
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-button {
+  width: 160px;
+  height: 48px;
+}
+
 .catalog-filter-reset {
   padding: 0;
   border: none;
@@ -285,6 +296,24 @@ img {
   font-size: 16px;
   line-height: 20px;
   color: inherit;
+}
+
+.results {
+  width: 1056px;
+  margin: 0 auto;
+}
+
+.results-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results-title {
+  width: 338px;
+}
+
+.results-select {
+  width: 290px;
 }
 
 .sort-button-selected {
@@ -312,6 +341,17 @@ img {
   line-height: 20px;
 }
 
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
@@ -321,6 +361,10 @@ img {
 .pagination-current {
   color: inherit;
   background-color: #f2f2f2;
+}
+
+.quantity {
+  width: 386px;
 }
 
 .quantity-text {
