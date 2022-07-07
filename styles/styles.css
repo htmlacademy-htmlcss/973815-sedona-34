@@ -75,36 +75,8 @@ img {
   margin: 0;
 }
 
-.page-header {
-  display: flex;
-}
-
-.navigation {
-  display: flex;
-  width: 1060px;
-}
-
-.navigation-list {
-  display: flex;
-  width: 520px;
-  margin-left: 30px;
-}
-
-.navigation-tools {
-  width: 264px;
-  margin-left: auto;
-}
-
-.navigation-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-  color: inherit;
-  text-decoration: none;
-}
-
 .button {
+  padding: 9px 15px 8px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -122,6 +94,64 @@ img {
 
 .button-fav {
   background: #7DB54F;
+}
+
+.page-header {
+  display: flex;
+  padding: 0 70px;
+}
+
+.sedona-logo {
+  width: 139px;
+}
+
+.sedona-logo-image {
+  position: absolute;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 520px;
+  margin-left: 30px;
+}
+
+.navigation-link {
+  display: block;
+  padding: 20px 17px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 264px;
+  margin-left: auto;
+}
+
+.navigation-tool:last-child {
+  margin-left: auto;
+}
+
+.navigation-tool-link {
+  display: block;
+  padding: 24px 12px 25px;
+}
+
+.navigation-tool-button {
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .welcome-wrapper {
