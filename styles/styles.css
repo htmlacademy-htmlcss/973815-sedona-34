@@ -156,7 +156,8 @@ img {
 
 .welcome-wrapper {
   width: 100%;
-  min-height: 485px;
+  padding-top: 51px;
+  min-height: 434px;
   background: #6b869d url(../images/backgrounds/background-welcome.jpg) no-repeat;
   background-size: 100% auto;
 }
@@ -167,6 +168,7 @@ img {
 }
 
 .main-title {
+  margin: 0;
   width: 620px;
   font-size: 30px;
   line-height: 36px;
@@ -176,9 +178,18 @@ img {
 }
 
 .main-text {
+  margin: 0;
   width: 700px;
   text-align: center;
   color: #333333;
+}
+
+.intro-title {
+  margin-top: 61px;
+}
+
+.intro-text {
+  margin-top: 31px;
 }
 
 .main-text-bg {
@@ -186,6 +197,7 @@ img {
 }
 
 .advantages {
+  margin-top: 90px;
   background-color: #f0f5f9;
 }
 
