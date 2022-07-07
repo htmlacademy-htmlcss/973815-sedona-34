@@ -451,17 +451,29 @@ img {
 
 .page-footer {
   display: flex;
-  justify-content: space-between;
+  padding: 20px 70px 15px;
+  align-items: center;
 }
 
-.footer-social {
+.footer-social-list {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 284px;
+}
+
+.footer-social-item {
+  width: 47px;
+  height: 40px;
 }
 
 .footer-phone-number {
+  margin-left: 94px;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: inherit;
+}
+
+.footer-copyright {
+  margin-left: auto;
 }
