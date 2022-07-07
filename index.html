@@ -11,7 +11,7 @@
   <div class="page-container">
     <header class="page-header">
       <a class="sedona-logo" href="#">
-        <img src="images/icons/menu-logo.svg" width="139" height="70" alt="Логотип Седона">
+        <img class="sedona-logo-image" src="images/icons/menu-logo.svg" width="139" height="70" alt="Логотип Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list list-reset">
@@ -25,19 +25,19 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-tools list-reset">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+        <ul class="navigation-tools list-reset">
+          <li class="navigation-tool">
+            <a class="navigation-tool-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-tool">
+            <a class="navigation-tool-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link button" href="#">Хочу сюда!</a>
+          <li class="navigation-tool">
+            <a class="navigation-tool-button button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -48,15 +48,17 @@
         <img class="welcome-image" src="images/icons/sedona-welcome.svg" width="458" height="352"
           alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks">
       </div>
-      <p class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="main-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <p class="intro-title main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="intro-text main-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ol class="advantages-list list-reset">
           <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <span class="advantages-number">— №1 —</span>
-            <p class="advantages-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="advantages-wrapper">
+              <h3 class="advantages-title">Настоящий городок</h3>
+              <span class="advantages-number">— №1 —</span>
+              <p class="advantages-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img src="images/sedona/sedona-streets.jpg" width="800" height="384" alt="Улицы городка Седона">
             <ul class="advantages-sublist list-reset">
               <li class="advantages-sublist-item">
@@ -74,10 +76,12 @@
             </ul>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <span class="advantages-number">— №2 —</span>
-            <p class="advantages-desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img src="images/sedona/sedona-devil-bridge.jpg" width="800" height="384" alt="Мост дьявола">
+            <div class="advantages-wrapper">
+              <h3 class="advantages-title">Там есть мост дьявола</h3>
+              <span class="advantages-number">— №2 —</span>
+              <p class="advantages-desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+            <img class="advantages-img-swap" src="images/sedona/sedona-devil-bridge.jpg" width="800" height="384" alt="Мост дьявола">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>

@@ -11,7 +11,7 @@
   <div class="page-container">
     <header class="page-header">
       <a class="sedona-logo" href="index.html">
-        <img src="images/icons/menu-logo.svg" width="139" height="70" alt="Логотип Седона">
+        <img class="sedona-logo-image" src="images/icons/menu-logo.svg" width="139" height="70" alt="Логотип Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list list-reset">
@@ -25,19 +25,19 @@
             <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-tools list-reset">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+        <ul class="navigation-tools list-reset">
+          <li class="navigation-tool">
+            <a class="navigation-tool-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-tool">
+            <a class="navigation-tool-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link button" href="#">Хочу сюда!</a>
+          <li class="navigation-tool">
+            <a class="navigation-tool-button button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -93,15 +93,17 @@
             <option value="cheap" selected>Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <a class="sort-button sort-button-selected" href="#">
-            <span class="visually-hidden">Показать таблицей</span>
-          </a>
-          <a class="sort-button" href="#">
-            <span class="visually-hidden">Показать слайдшоу</span>
-          </a>
-          <a class="sort-button" href="#">
-            <span class="visually-hidden">Показать списком</span>
-          </a>
+          <div class="sort-wrapper">
+            <a class="sort-button sort-button-selected" href="#">
+              <span class="visually-hidden">Показать таблицей</span>
+            </a>
+            <a class="sort-button" href="#">
+              <span class="visually-hidden">Показать слайдшоу</span>
+            </a>
+            <a class="sort-button" href="#">
+              <span class="visually-hidden">Показать списком</span>
+            </a>
+          </div>
         </div>
         <ul class="product-list list-reset">
           <li class="product-card">
@@ -170,7 +172,7 @@
             <li class="pagination-item">
               <a class="pagination-link button button-add" href="#">...</a>
             </li>
-            <li class="pagination-item button button-add">
+            <li class="pagination-item">
               <a class="pagination-link button button-add" href="#">10</a>
             </li>
           </ul>
