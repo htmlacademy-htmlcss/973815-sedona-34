@@ -85,6 +85,7 @@ img {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #756157;
+  border: 0px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -179,7 +180,7 @@ img {
 }
 
 .main-text {
-  margin: 0;
+  margin: 29px 0 0;
   width: 700px;
   text-align: center;
   color: #333333;
@@ -286,10 +287,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 91px 304px 93px;
 }
 
 .hotel-search-button {
-  width: 574px;
+  margin-top: 56px;
+  min-width: 574px;
   height: 60px;
   font-weight: 700;
   font-size: 20px;
@@ -297,7 +300,9 @@ img {
 }
 
 .subscribe {
+  box-sizing: border-box;
   width: 100%;
+  padding: 94px 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,12 +314,17 @@ img {
   background-size: 100% auto;
 }
 
+.subscribe-form {
+  margin-top: 46px;
+}
+
 .subscribe-button {
   width: 200px;
   height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .catalog-header {
