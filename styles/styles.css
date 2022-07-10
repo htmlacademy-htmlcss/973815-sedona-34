@@ -480,12 +480,19 @@ img {
 .pagination-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 29px;
+  border-top: 1px solid #E6E6E6;
 }
 
 .pagination {
   display: flex;
-  justify-content: space-between;
-  width: 400px;
+  flex-wrap: wrap;
+  width: 672px;
+  padding-bottom: 17px;
+}
+
+.pagination-item {
+  margin-bottom: 8px;
 }
 
 .pagination-item:not(:last-child) {
