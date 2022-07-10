@@ -394,6 +394,7 @@ img {
 .results-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 56px;
 }
 
 .results-title {
@@ -428,7 +429,10 @@ img {
 }
 
 .product-list {
-  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
+  margin-bottom: 66px;
 }
 
 .product-card-link {
