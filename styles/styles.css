@@ -81,6 +81,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
@@ -435,6 +436,18 @@ img {
   margin-bottom: 66px;
 }
 
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.product-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+}
+
 .product-card-link {
   font-weight: 700;
   font-size: 24px;
@@ -443,16 +456,25 @@ img {
   text-decoration: none;
 }
 
+.product-card-title {
+  margin: 16px 0;
+}
+
 .product-card-type,
 .product-card-price {
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
 .product-card-rating {
+  grid-column: 2 / -1;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .pagination-wrapper {
