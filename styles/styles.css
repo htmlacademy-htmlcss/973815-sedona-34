@@ -109,6 +109,7 @@ img {
 
 .sedona-logo {
   width: 139px;
+  margin-right: 53px;
 }
 
 .sedona-logo-image {
@@ -123,13 +124,13 @@ img {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  width: 520px;
-  margin-left: 30px;
+  max-width: 520px;
 }
 
 .navigation-link {
   display: block;
-  padding: 20px 17px;
+  position: relative;
+  padding: 20px 17px 19px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -138,26 +139,63 @@ img {
   text-decoration: none;
 }
 
+.navigation-link-current::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #756257;
+  width: 70%;
+  bottom: 0;
+  left: 15%;
+}
+
 .navigation-tools {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 264px;
+  min-width: 264px;
+  max-width: 348px;
   margin-left: auto;
 }
 
-.navigation-tool:last-child {
+.navigation-tool-button {
   margin-left: auto;
 }
 
 .navigation-tool-link {
   display: block;
-  padding: 24px 12px 25px;
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+  padding: 33px 21px 32px;
 }
 
-.navigation-tool-button {
-  padding-left: 35px;
-  padding-right: 35px;
+.navigation-tool-search {
+  background: url(../images/icons/menu-search.svg) no-repeat center;
+}
+
+.navigation-tool-favorite {
+  position: relative;
+  background: url(../images/icons/menu-favorite.svg) no-repeat center;
+}
+
+.favorite-count {
+  position: absolute;
+  top: 5px;
+  right: -2px;
+  background: #7DB54F;
+  border-radius: 10px;
+  padding: 3px 4px;
+
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: -0.1em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.navigation-button {
+  padding: 9px 34px 8px;
 }
 
 .welcome-wrapper {
