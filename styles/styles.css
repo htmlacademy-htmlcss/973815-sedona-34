@@ -233,7 +233,7 @@ img {
 }
 
 .main-text {
-  margin: 0;
+  margin: 29px 0 0;
   width: 700px;
   text-align: center;
   color: #333333;
@@ -366,7 +366,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 91px 304px 93px;
+  padding: 91px 250px 93px;
 }
 
 .hotel-search-button {
