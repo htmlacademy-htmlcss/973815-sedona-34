@@ -614,7 +614,8 @@ img {
 
 .page-footer {
   display: flex;
-  padding: 20px 70px 15px;
+  padding: 45px 70px 30px;
+  margin-top: auto;
   align-items: center;
 }
 
@@ -624,9 +625,14 @@ img {
   width: 284px;
 }
 
-.footer-social-item {
-  width: 47px;
-  height: 40px;
+.footer-social-link {
+  min-width: 14px;
+  min-height: 14px;
+  padding: 5px 13px;
+}
+
+.footer-phone {
+  margin: 0;
 }
 
 .footer-phone-number {
