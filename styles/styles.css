@@ -199,11 +199,21 @@ img {
 }
 
 .welcome-wrapper {
+  position: relative;
   width: 100%;
   padding-top: 51px;
   min-height: 434px;
   background: #6b869d url(../images/backgrounds/background-welcome.jpg) no-repeat;
   background-size: 100% auto;
+}
+
+.welcome-wrapper::after {
+  content: "";
+  position: absolute;
+  background: url(../images/backgrounds/background-divider.svg) no-repeat;
+  width: 1200px;
+  height: 57px;
+  bottom: 0;
 }
 
 .welcome-image {
