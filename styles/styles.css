@@ -559,12 +559,27 @@ img {
   border-radius: 4px;
   top: 4px;
   left: 1px;
+  outline: none;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
   background-image: url(../images/icons/filter-checkbox.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.control-input[type="checkbox"]:hover + .control-mark,
+.control-input[type="checkbox"]:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input[type="checkbox"]:active + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:focus + .control-mark,
+.control-input[type="radio"]:focus + .control-mark {
+  outline: 3px solid #83B3D3;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -583,6 +598,10 @@ img {
   margin: auto;
   border-radius: 50%;
   background-color: #3F5E72;
+}
+
+.control-input[type="radio"]:focus + .control-mark::before {
+  background-color: #3F3F3F;
 }
 
 .filter-button {
