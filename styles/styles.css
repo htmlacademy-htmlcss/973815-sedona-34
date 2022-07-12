@@ -560,6 +560,7 @@ img {
 .sort-button {
   margin-right: 8px;
   margin-bottom: 8px;
+  outline: none;
 }
 
 .sort-button:nth-child(3n) {
@@ -578,7 +579,16 @@ img {
   background: url(../images/icons/sort-button-list.svg) no-repeat center;
 }
 
-.sort-button-selected {
+.sort-button-selected,
+.sort-button:hover {
+  border-color: #000000;
+}
+
+.sort-button:focus {
+  border-color: #68A2CA;
+}
+
+.sort-button:active {
   border-color: #000000;
 }
 
@@ -667,7 +677,10 @@ img {
   text-align: center;
 }
 
-.pagination-current {
+.pagination-current,
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
   color: inherit;
   background-color: #f2f2f2;
 }
