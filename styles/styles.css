@@ -490,17 +490,19 @@ img {
 .results {
   width: 1056px;
   margin: 0 auto;
-  padding: 62px 0 25px;
+  padding: 55px 0 25px;
 }
 
 .results-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 56px;
+  align-items: center;
+  margin-bottom: 49px;
 }
 
 .results-title {
   width: 338px;
+  text-align: center;
 }
 
 .results-select {
@@ -512,6 +514,7 @@ img {
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
+  width: 160px;
 }
 
 .sort-button {
@@ -522,12 +525,29 @@ img {
   border-radius: 4px;
 }
 
-.sort-button:not(:last-child) {
+.sort-button {
   margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.sort-button:nth-child(3n) {
+  margin-right: 0;
+}
+
+.sort-button-table {
+  background: url(../images/icons/sort-button-table.svg) no-repeat center;
+}
+
+.sort-button-slideshow {
+  background: url(../images/icons/sort-button-slideshow.svg) no-repeat center;
+}
+
+.sort-button-list {
+  background: url(../images/icons/sort-button-list.svg) no-repeat center;
 }
 
 .sort-button-selected {
-  border: 2px solid #000000;
+  border-color: #000000;
 }
 
 .product-list {
