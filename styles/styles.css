@@ -426,17 +426,39 @@ img {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-.breadcrumbs-item:nth-child(n+2) {
-  margin-left: 25px;
+.breadcrumbs-item + .breadcrumbs-item {
+  position: relative;
+  margin-left: 24px;
+}
+
+.breadcrumbs-item + .breadcrumbs-item::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 8px;
+  background: url(../images/icons/breadcrumbs-arrow.svg) no-repeat center;
+  top: 7px;
+  left: -15px;
 }
 
 .breadcrumbs-link {
+  display: block;
   font-size: 16px;
   line-height: 21px;
   color: inherit;
   text-decoration: none;
+}
+
+.breadcrumbs-link-main {
+  margin-top: auto;
+  width: 12px;
+  height: 12px;
+  padding: 4px 2px;
+  background: url(../images/icons/breadcrumbs-home.svg) no-repeat center;
 }
 
 .catalog-filter-title {
