@@ -399,7 +399,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 91px 250px 93px;
+  padding: 91px 250px 92px;
 }
 
 .hotel-search-button {
@@ -427,7 +427,24 @@ img {
 }
 
 .subscribe-form {
+  display: flex;
+  width: 800px;
   margin-top: 46px;
+}
+
+.subscribe-field {
+  flex-grow: 1;
+  width: 500px;
+  padding: 20px 22px 19px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  font: inherit;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.subscribe-field-catalog {
+  background-color: #F2F2F2;
 }
 
 .subscribe-button {
