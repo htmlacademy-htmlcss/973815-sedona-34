@@ -456,7 +456,7 @@ img {
 .catalog-header {
   width: 100%;
   box-sizing: border-box;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 60px;
   min-height: 403px;
   background: #4b5f74 url(../images/backgrounds/background-filter.jpg) no-repeat;
   background-size: 100% auto;
@@ -511,22 +511,86 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.catalog-filter-title {
+.filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 366px;
+}
+
+.filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter-item {
+  margin-bottom: 10px;
+}
+
+.filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  margin-bottom: 26px;
 }
 
-.catalog-filter {
-  display: flex;
+.control-text {
+  font-size: 18px;
+  line-height: 21px;
 }
 
-.catalog-filter-button {
+.control {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  top: 4px;
+  left: 1px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url(../images/icons/filter-checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #3F5E72;
+}
+
+.filter-button {
   min-width: 160px;
   height: 48px;
 }
 
-.catalog-filter-reset {
+.filter-reset {
   padding: 0;
   border: none;
   background: transparent;
