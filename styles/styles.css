@@ -464,7 +464,7 @@ img {
 
 .breadcrumbs-item + .breadcrumbs-item {
   position: relative;
-  margin-left: 24px;
+  margin-left: 26px;
 }
 
 .breadcrumbs-item + .breadcrumbs-item::before {
@@ -473,7 +473,7 @@ img {
   width: 5px;
   height: 8px;
   background: url(../images/icons/breadcrumbs-arrow.svg) no-repeat center;
-  top: 7px;
+  top: 6px;
   left: -15px;
 }
 
@@ -485,12 +485,16 @@ img {
   text-decoration: none;
 }
 
-.breadcrumbs-link-main {
-  margin-top: auto;
-  width: 12px;
-  height: 12px;
-  padding: 4px 2px;
-  background: url(../images/icons/breadcrumbs-home.svg) no-repeat center;
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #ffffff;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter-title {
