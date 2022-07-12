@@ -490,7 +490,7 @@ img {
 .results {
   width: 1056px;
   margin: 0 auto;
-  padding: 55px 0 25px;
+  padding-top: 55px;
 }
 
 .results-wrapper {
@@ -554,7 +554,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   column-gap: 18px;
-  margin-bottom: 66px;
+  margin-bottom: 67px;
 }
 
 .product-card {
@@ -643,7 +643,9 @@ img {
 .quantity {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 386px;
+  margin-bottom: 20px;
 }
 
 .quantity-text {
