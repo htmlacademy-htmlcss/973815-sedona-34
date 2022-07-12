@@ -678,6 +678,15 @@ img {
   padding: 5px 13px;
 }
 
+.footer-social-link:hover path,
+.footer-social-link:focus path {
+  fill: #68A2CA;
+}
+
+.footer-social-link:active path {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 .footer-phone {
   margin: 0;
 }
@@ -690,6 +699,24 @@ img {
   color: inherit;
 }
 
+.footer-phone-number:hover,
+.footer-phone-number:focus {
+  color: #756157;
+}
+
+.footer-phone-number:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-copyright {
   margin-left: auto;
+}
+
+.footer-copyright:hover path,
+.footer-copyright:focus path {
+  fill: #756157;
+}
+
+.footer-copyright:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
