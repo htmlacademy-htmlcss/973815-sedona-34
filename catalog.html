@@ -116,8 +116,33 @@
               </ul>
             </fieldset>
           </div>
-          <button class="filter-button button button-add" type="submit">Применить</button>
-          <button class="filter-reset" type="reset">Сбросить</button>
+          <div class="filter-container">
+            <fieldset class="filter-group">
+              <legend class="filter-title">Стоимость, ₽:</legend>
+              <div class="range">
+                <div class="range-inputs-wrapper">
+                  <label class="range-label range-label-min" for="input-min">от</label>
+                  <input class="range-input range-input-min" name="min-price" id="input-min" type="number" value="0"
+                    placeholder="0">
+                  <label class="range-label range-label-max" for="input-max">до</label>
+                  <input class="range-input range-input-max" name="max-price" id="input-max" type="number" value="9000"
+                    placeholder="9000">
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle range-toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle range-toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <button class="filter-button button button-add" type="submit">Применить</button>
+            <button class="filter-reset" type="reset">Сбросить</button>
+          </div>
         </form>
       </header>
       <section class="results">
