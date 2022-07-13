@@ -1052,6 +1052,10 @@ img {
   border-radius: 30px;
 }
 
+/* .modal-container-close {
+  display: none;
+} */
+
 .modal-hotel-search {
   box-sizing: border-box;
   width: 715px;
@@ -1102,6 +1106,10 @@ img {
   grid-area: children;
 }
 
+.modal-item-children .modal-label {
+  margin-left: 58px;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1125,15 +1133,41 @@ img {
 
 .modal-calendar-button {
   position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url(../images/icons/modal-date.svg) no-repeat center;
+  right: 0px;
+  border: none;
+  cursor: pointer;
 }
 
 .modal-guest-toggle {
   position: absolute;
+  width: 44px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+.modal-guest-toggle-minus {
+  left: 76px;
+}
+
+.modal-guest-toggle-plus {
+  left: 238px;
 }
 
 .modal-msg {
   display: block;
   position: absolute;
+  bottom: -29px;
+  left: 157px;
   max-width: 420px;
   font-size: 16px;
   line-height: 21px;
@@ -1145,10 +1179,12 @@ img {
 }
 
 .modal-input {
+  box-sizing: border-box;
   margin-left: auto;
   width: 420px;
   height: 50px;
   padding: 0;
+  padding-left: 21px;
   border: none;
   outline: none;
   font: inherit;
@@ -1159,8 +1195,21 @@ img {
 
 .modal-input-small {
   width: 133px;
+  padding-left: 62px;
+  appearance: textfield;
+}
+
+.modal-input-small::-webkit-outer-spin-button,
+.modal-input-small::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .modal-main-buttom {
   grid-area: button;
+  min-height: 60px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
