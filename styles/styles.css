@@ -456,7 +456,7 @@ img {
 .catalog-header {
   width: 100%;
   box-sizing: border-box;
-  padding: 35px 70px 60px;
+  padding: 35px 70px 56px;
   min-height: 403px;
   background: #4b5f74 url(../images/backgrounds/background-filter.jpg) no-repeat;
   background-size: 100% auto;
@@ -604,20 +604,161 @@ img {
   background-color: #3F3F3F;
 }
 
+.filter-container {
+  display: grid;
+  grid-template-columns: 288px 160px;
+  grid-template-areas: "input button";
+  column-gap: 70px;
+}
+
+.range-inputs-wrapper {
+  position: relative;
+  display: flex;
+  margin: 7px 0 28px;
+}
+
+.range-input {
+  width: 122px;
+  height: 45px;
+  padding: 0;
+  border: 2px solid #FFFFFF;
+  outline: none;
+  appearance: textfield;
+  background-color: transparent;
+  font: inherit;
+  padding-left: 18px;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.range-input-min {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input-max {
+  margin-left: -2px;
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.range-input:focus {
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+}
+
+.range-input:active {
+  background-color: #756257;
+}
+
+.range-label {
+  position: absolute;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.range-label-min {
+  left: 112px;
+  top: 11px;
+}
+
+.range-label-max {
+  right: 17px;
+  top: 12px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  width: 287px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  width: 227px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.range-toggle-max {
+  top: -8px;
+  left: 217px;
+}
+
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83B3D3;
+}
+
 .filter-button {
-  min-width: 160px;
+  grid-area: button;
   height: 48px;
+  margin-top: 60px;
 }
 
 .filter-reset {
-  padding: 0;
+  display: block;
+  justify-self: center;
+  grid-area: button;
+  margin-top: 123px;
+  text-align: center;
+  height: 30px;
+  padding: 4px 13px 5px;
   border: none;
   background: transparent;
   cursor: pointer;
-
+  outline: none;
+  border-radius: 4px;
+  font: inherit;
+  color: inherit;
   font-size: 16px;
   line-height: 20px;
-  color: inherit;
+}
+
+.filter-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-reset:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.filter-reset:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .results {
