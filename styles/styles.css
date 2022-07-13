@@ -1075,6 +1075,28 @@ img {
   cursor: pointer;
 }
 
+.modal-form {
+  display: grid;
+  grid-template-columns: 288px 287px;
+  grid-template-areas:
+    "check-in check-in"
+    "check-out check-out"
+    "adults children"
+    "button button"
+}
+
+.modal-item-checkin {
+  grid-area: check-in;
+}
+
+.modal-item-checkout {
+  grid-area: check-out;
+}
+
+.modal-item-adults {
+  grid-area: adults;
+}
+
 .modal-item-children {
   grid-area: children;
 }
