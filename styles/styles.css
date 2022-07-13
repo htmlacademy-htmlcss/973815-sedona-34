@@ -900,6 +900,18 @@ img {
   color: #333333;
 }
 
+.product-card-stars {
+  background: url(../images/icons/catalog-stars.svg) no-repeat;
+}
+
+.product-card-stars-two {
+  background-position: -48px;
+}
+
+.product-card-stars-three {
+  background-position: -24px;
+}
+
 .product-card-rating {
   grid-column: 2 / -1;
   margin: 0;
