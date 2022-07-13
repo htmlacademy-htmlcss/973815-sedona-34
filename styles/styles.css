@@ -51,7 +51,6 @@ body {
 img {
   max-width: 100%;
   object-fit: contain;
-  display: block;
 }
 
 .visually-hidden {
@@ -291,6 +290,10 @@ img {
   flex-wrap: wrap;
 }
 
+.advantages-photo {
+  display: block;
+}
+
 .advantages-sublist {
   display: flex;
 }
@@ -343,7 +346,7 @@ img {
   left: 168px;
 }
 
-.advantages-img-swap {
+.advantages-photo-swap {
   order: -1;
 }
 
@@ -872,6 +875,10 @@ img {
   display: flex;
   flex-direction: column;
   padding: 20px;
+}
+
+.product-card-photo {
+  display: block;
 }
 
 .product-card-wrapper {
