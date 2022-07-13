@@ -63,7 +63,8 @@ img {
   font-size: 1px;
   white-space: nowrap;
   clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   overflow: hidden;
 }
 
@@ -409,7 +410,7 @@ img {
 .hotel-search-button {
   margin-top: 56px;
   min-width: 574px;
-  height: 60px;
+  padding: 11px 15px 13px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -453,7 +454,6 @@ img {
 
 .subscribe-button {
   width: 200px;
-  height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -630,7 +630,8 @@ img {
   padding: 0;
   border: 2px solid #FFFFFF;
   outline: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
   background-color: transparent;
   font: inherit;
   padding-left: 18px;
@@ -650,7 +651,8 @@ img {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -732,12 +734,22 @@ img {
 }
 
 .filter-button {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: button;
   height: 48px;
   margin-top: 60px;
 }
 
+.modal-form > .filter-button {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+}
+
 .filter-reset {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   display: block;
   justify-self: center;
   grid-area: button;
@@ -754,6 +766,12 @@ img {
   color: inherit;
   font-size: 16px;
   line-height: 20px;
+}
+
+.modal-form > .filter-reset {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
 }
 
 .filter-reset:hover {
@@ -793,7 +811,8 @@ img {
 
 .catalog-select {
   border: 2px solid #E5E5E5;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   background: url(../images/icons/select-arrow.svg) no-repeat;
   background-position: right 18px center;
   padding: 12px 20px;
@@ -1111,18 +1130,28 @@ img {
 }
 
 .modal-item-checkin {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: check-in;
 }
 
 .modal-item-checkout {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: check-out;
 }
 
 .modal-item-adults {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: adults;
 }
 
 .modal-item-children {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
   grid-area: children;
 }
 
@@ -1197,7 +1226,7 @@ img {
 }
 
 .modal-error {
-  color: #FF5757;;
+  color: #FF5757;
 }
 
 .tooltip {
@@ -1265,22 +1294,32 @@ img {
 .modal-input-small {
   width: 133px;
   padding-left: 62px;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .modal-input-small::-webkit-outer-spin-button,
 .modal-input-small::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
 .modal-main-button {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: button;
   min-height: 60px;
   border-radius: 10px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+}
+
+.modal-form > .modal-main-button {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
 }
 
 .modal-close-button:hover,
