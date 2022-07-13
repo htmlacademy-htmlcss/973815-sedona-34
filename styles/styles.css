@@ -1033,3 +1033,75 @@ img {
 .footer-copyright:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-hotel-search {
+  box-sizing: border-box;
+  width: 715px;
+  min-height: 561px;
+  padding: 61px 68px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 22px;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../images/icons/modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-item-children {
+  grid-area: children;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 60px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.modal-item {
+  margin: 0;
+}
+
+.modal-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.modal-msg {
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.modal-error {
+  color: #FF5757;;
+}
