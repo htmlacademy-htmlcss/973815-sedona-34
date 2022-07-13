@@ -324,6 +324,10 @@ img {
   padding: 184px 85px 49px;
 }
 
+.advantages-sublist-housing {
+  padding: 184px 115px 49px;
+}
+
 .advantages-sublist-item::before {
   content: "";
   position: absolute;
