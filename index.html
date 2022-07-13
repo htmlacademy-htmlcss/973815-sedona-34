@@ -178,6 +178,7 @@
   <div class="modal-container modal-container-close">
     <div class="modal modal-hotel-search">
       <button class="modal-close-button">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" fill="#000"/></svg>
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -185,7 +186,7 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="modal-item modal-item-checkin">
             <label class="modal-label" for="check-in">Дата заезда:</label>
-            <input class="modal-input" type="text" id="check-in" name="check-in-date" value="27 апреля 2020" required>
+            <input class="modal-input modal-input-big" type="text" id="check-in" name="check-in-date" value="27 апреля 2020" required>
             <button class="modal-calendar-button" type="button">
               <span class="visually-hidden">Выбрать дату заселения на календаре</span>
             </button>
@@ -193,7 +194,7 @@
           </p>
           <p class="modal-item modal-item-checkout">
             <label class="modal-label" for="check-out">Дата выезда:</label>
-            <input class="modal-input" type="text" id="check-out" name="check-out-date" value="1 сентября 2021" required>
+            <input class="modal-input modal-input-big" type="text" id="check-out" name="check-out-date" value="1 сентября 2021" required>
             <button class="modal-calendar-button" type="button">
               <span class="visually-hidden">Выбрать дату выезда на календаре</span>
             </button>
@@ -202,28 +203,28 @@
           <p class="modal-item modal-item-adults modal-item-small">
             <label class="modal-label" for="adults">Взрослые:</label>
             <button class="modal-guest-toggle modal-guest-toggle-minus" type="button">
-              <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/></svg>
+              <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#B3B3B3"/></svg>
               <span class="visually-hidden">Уменьшить количество гостей</span>
             </button>
             <input class="modal-input modal-input-small" type="number" id="adults" name="adults" value="2" required>
             <button class="modal-guest-toggle modal-guest-toggle-plus" type="button">
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#B3B3B3"/></svg>
               <span class="visually-hidden">Увеличить количество гостей</span>
             </button>
           </p>
           <p class="modal-item modal-item-children modal-item-small">
             <label class="modal-label" for="children">Дети:</label>
             <button class="modal-guest-toggle modal-guest-toggle-minus" type="button">
-              <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#000"/></svg>
+              <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z" fill="#B3B3B3"/></svg>
               <span class="visually-hidden">Уменьшить количество гостей</span>
             </button>
             <input class="modal-input modal-input-small" type="number" id="children" name="children" value="1" required>
             <button class="modal-guest-toggle modal-guest-toggle-plus" type="button">
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#B3B3B3"/></svg>
               <span class="visually-hidden">Увеличить количество гостей</span>
             </button>
           </p>
-          <button class="modal-main-buttom button button-add">Найти</button>
+          <button class="modal-main-button button button-add">Найти</button>
         </form>
       </section>
     </div>

@@ -1065,7 +1065,7 @@ img {
 
 .modal-close-button {
   position: absolute;
-  padding: 22px;
+  padding: 20px;
   top: 54px;
   right: 70px;
   width: 53px;
@@ -1073,9 +1073,6 @@ img {
   background-color: #F2F2F2;
   border: none;
   border-radius: 50%;
-  background-image: url("../images/icons/modal-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 
@@ -1143,8 +1140,8 @@ img {
 
 .modal-guest-toggle {
   position: absolute;
-  width: 44px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   border: none;
   background-color: transparent;
   left: 0;
@@ -1152,11 +1149,13 @@ img {
   right: 0;
   bottom: 0;
   margin: auto;
+  outline: none;
   cursor: pointer;
 }
 
 .modal-guest-toggle-minus {
   left: 76px;
+  padding-bottom: 10px;
 }
 
 .modal-guest-toggle-plus {
@@ -1188,8 +1187,9 @@ img {
   border: none;
   outline: none;
   font: inherit;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 40px;
   background-color: #F2F2F2;
 }
 
@@ -1205,11 +1205,60 @@ img {
   margin: 0;
 }
 
-.modal-main-buttom {
+.modal-main-button {
   grid-area: button;
   min-height: 60px;
   border-radius: 10px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+}
+
+.modal-close-button:hover,
+.modal-input-big:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus,
+.modal-input-big:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active path {
+  fill: #A1A1A1;
+}
+
+.modal-input-big:focus:active {
+  background-color: #FFFFFF;
+  outline: 2px solid #000000;
+}
+
+.modal-guest-toggle:hover path {
+  fill: #000000;
+}
+
+.modal-guest-toggle:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.modal-guest-toggle:focus path {
+  fill: #000000;
+}
+
+.modal-guest-toggle:active path {
+  fill: #CCCCCC;
+}
+
+.modal-main-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-main-button:hover:focus {
+  background: #68A2CA;
+  outline: 3px solid #756257;
+}
+
+.modal-main-button:hover:active {
+  color: #95BEDA;
 }
