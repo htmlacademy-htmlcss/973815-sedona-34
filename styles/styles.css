@@ -1082,7 +1082,8 @@ img {
     "check-in check-in"
     "check-out check-out"
     "adults children"
-    "button button"
+    "button button";
+  row-gap: 40px;
 }
 
 .modal-item-checkin {
@@ -1103,12 +1104,15 @@ img {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
   max-width: 500px;
   text-align: left;
 }
 
 .modal-item {
+  position: relative;
+  display: flex;
+  align-items: center;
   margin: 0;
 }
 
@@ -1116,9 +1120,21 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  text-transform: capitalize;
+}
+
+.modal-calendar-button {
+  position: absolute;
+}
+
+.modal-guest-toggle {
+  position: absolute;
 }
 
 .modal-msg {
+  display: block;
+  position: absolute;
+  max-width: 420px;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
@@ -1126,4 +1142,25 @@ img {
 
 .modal-error {
   color: #FF5757;;
+}
+
+.modal-input {
+  margin-left: auto;
+  width: 420px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #F2F2F2;
+}
+
+.modal-input-small {
+  width: 133px;
+}
+
+.modal-main-buttom {
+  grid-area: button;
 }
